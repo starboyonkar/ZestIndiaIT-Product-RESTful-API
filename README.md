@@ -5,6 +5,9 @@ A production-oriented RESTful Product Management API built with **Java and Sprin
 The application follows a layered architecture with **Spring Data JPA, Hibernate, MySQL, Spring Security, JWT authentication, refresh-token rotation, role-based authorization, Jakarta Validation, pagination, standardized exception handling, Swagger/OpenAPI documentation, JUnit 5, Mockito, H2 integration testing, and Docker**.
 
 ---
+## Swagger UI
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/e0c6c9d5-0565-4be7-b433-fb2d8564c826" />
+
 
 ## Table of Contents
 
