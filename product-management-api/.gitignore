@@ -1,0 +1,249 @@
+# Spring Boot / Java / Maven
+
+# Compiled class files
+*.class
+
+# Java archives
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Maven wrapper generated files
+.mvn/wrapper/*.jar
+
+
+# IDE - IntelliJ IDEA
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IntelliJ project files
+out/
+
+# IntelliJ compiler files
+.idea_modules/
+
+
+# Eclipse / Spring Tool Suite
+
+
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# Eclipse metadata
+.factorypath
+
+# Eclipse generated files
+bin/
+
+# VS Code
+
+.vscode/
+*.code-workspace
+
+
+# NetBeans
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+
+# OS Generated Files
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+
+# Windows installer files
+*.cab
+*.msi
+*.msix
+*.msm
+
+# Logs
+
+*.log
+logs/
+log/
+*.log.*
+spring.log
+
+
+# Application Runtime Files
+
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+
+# Environment / Secrets
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local application configuration
+application-local.properties
+application-local.yml
+application-local.yaml
+
+# Production secrets
+application-prod.properties
+application-prod.yml
+application-prod.yaml
+
+# SSL / TLS certificates
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.key
+*.pem
+
+# Private keys
+*.der
+*.crt
+*.csr
+
+# Database
+
+# SQL dump files
+*.sql.gz
+*.dump
+*.bak
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# MySQL generated files
+mysql-data/
+mysql_data/
+
+# Docker database volumes
+docker/mysql/
+docker/volumes/
+
+# Docker
+
+# Docker override files
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker environment files
+docker/.env
+
+# Spring Boot Generated Files
+
+# Spring Boot devtools restart files
+.spring/
+
+# Generated reports
+reports/
+
+# Coverage reports
+coverage/
+jacoco/
+*.exec
+
+# Testing
+
+# Test reports
+test-results/
+surefire-reports/
+failsafe-reports/
+
+# Test temporary files
+src/test/**/tmp/
+src/test/**/temp/
+
+# Lombok
+
+lombok.config
+
+# SonarQube
+
+.sonar/
+.scannerwork/
+
+# Generated API Documentation
+
+swagger-output/
+openapi-output/
+generated-docs/
+
+# Backup Files
+
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+# Editor backup files
+*.swp
+*.swo
+*.swn
+*.swn
+
+# Local Development
+
+# Local configuration
+config/local/
+config/secrets/
+
+# Generated uploads
+uploads/
+storage/
+
+# Local runtime
+run/
+runtime/
+
+# Git / Patch Temporary Files
+
+*.patch
+*.diff
+
+# Environment template should remain tracked
+!.env.example
+
+# GitHub workflows should remain tracked
+!.github/workflows/
+
+# Docker configuration should remain tracked
+!Dockerfile
+!docker-compose.yml

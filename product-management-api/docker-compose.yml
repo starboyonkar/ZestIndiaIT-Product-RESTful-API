@@ -1,0 +1,65 @@
+services:
+
+  mysql:
+    image: mysql:8.4
+    container_name: product-mysql
+
+    restart: unless-stopped
+
+    environment:
+      MYSQL_DATABASE: product_management_db
+      MYSQL_USER: product_user
+      MYSQL_PASSWORD: product_password
+      MYSQL_ROOT_PASSWORD: root_password
+
+    ports:
+      - "3306:3306"
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "localhost",
+          "-u",
+          "root",
+          "-proot_password"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  app:
+    build:
+      context: .
+
+    container_name: product-api
+
+    restart: unless-stopped
+
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+    environment:
+
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/product_management_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+
+      SPRING_DATASOURCE_USERNAME: product_user
+
+      SPRING_DATASOURCE_PASSWORD: product_password
+
+      JWT_SECRET: change-this-development-secret
+
+    ports:
+      - "8086:8086"
+
+
+volumes:
+  mysql_data:
